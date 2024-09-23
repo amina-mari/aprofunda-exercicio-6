@@ -1,0 +1,12 @@
+{
+  "name": "aprofunda-exercicio-6",
+  "version": "1.0.0",
+  "description": "Nesse projeto da Semana 6 do Curso Aprofunda PretaLab, o objetivo será a a criação de uma API de simulação de uma Lista de Tarefas estilo Kanban. Utilizando os conceitos vistos em aula de Clean Architecure, princípios SOLID, Typescript e TDD, a estrutura do projeto seguirá da seguinte forma: Na API ToDoList as tarefas fazem parte de uma lista de tarefas e iniciam fazendo parte da lista Default.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -11,6 +11,7 @@ Como uma forma de ajudar a equipe, a API pode fornecer quais tarefas estão marc
 Para isso, as entidades criadas inicialmente serão:
 
 ### 2.1 Tarefa
+```
 id: string,
 user_id?: string,
 list_id: string,
@@ -19,16 +20,20 @@ deadline: string,
 title: string,
 description: string,
 tags?: string[]
+```
 
 ### 2.2 Lista
+```
 id: string,
 name: string,
 to_dos?: ToDo[]
-
+```
 ### 2.3 Usuário
+```
 id: string,
 name: string,
 to_dos?: ToDo[]
+```
 
 
 ## 3. Expectativas da API (tomara que dê certo)
@@ -56,7 +61,7 @@ Seguindo a proposta CRUD (Create, Read, Update e Delete), o usuário da API deve
 ## 3. Estrutura de Pastas
 
 Usando Clean Architecture, a estrutura de pastas do projeto seguirá esse formato:
-
+```
 src/
 │
 ├── application/
@@ -97,7 +102,7 @@ src/
 └── interface/
     ├── book-controller.ts     // Controlador que lida com as requisições HTTP
     └── index.ts              // Arquivo principal da aplicação
-
+```
 
 
 ## 4. Testagem de Endpoints do Insomnia
