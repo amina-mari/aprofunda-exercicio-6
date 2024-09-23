@@ -23,12 +23,12 @@ tags?: string[]
 ### 2.2 Lista
 id: string,
 name: string,
-to_dos: ToDo[]
+to_dos?: ToDo[]
 
 ### 2.3 Usuário
 id: string,
 name: string,
-to_dos: ToDo[]
+to_dos?: ToDo[]
 
 
 ## 3. Expectativas da API (tomara que dê certo)
