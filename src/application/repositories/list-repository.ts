@@ -4,7 +4,9 @@ import { ToDo } from "../../domain/todo";
 export interface ListRepository {
     save(list: List): void;
 
-    getTodos(): Array<ToDo>
+    getTodos(list_id: string): Array<ToDo>
 
-    deleteList(id: string): boolean;
+    update(list_id: string): List | null
+
+    deleteList(list_id: string): boolean;
 }
