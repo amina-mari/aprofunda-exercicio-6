@@ -1,4 +1,4 @@
-import { ToDo } from "../../domain/todo";
+import {ToDo} from '../../domain/todo'
 
 export interface TodoRepository {
     save(todo: ToDo): void,
