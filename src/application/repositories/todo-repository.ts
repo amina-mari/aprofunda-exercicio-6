@@ -6,7 +6,7 @@ export interface TodoRepository {
     getTodo(todo_id: string): ToDo | null,
     getTodayTodos(): Array<ToDo> | null,
     getUserTodayTodos(user_id: string): Array<ToDo> | null,
-    getListTodos(list_id): Array<ToDo> | null
+    getListTodos(list_id: string): Array<ToDo> | null
     getUserTodos(user_id: string): Array<ToDo> | null,
     
     updateTodo(id: string, params: Partial<ToDo>): ToDo | null,
