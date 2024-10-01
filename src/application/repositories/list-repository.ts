@@ -2,11 +2,11 @@ import { List } from "../../domain/list";
 import { ToDo } from "../../domain/todo";
 
 export interface ListRepository {
-    save(list: List): void;
+    save(list: List): Promise<void>;
 
-    getTodos(list_id: string): Array<ToDo>
+    getTodos(list_id: string): Promise<Array<ToDo>>
 
-    update(list_id: string): List | null
+    update(list_id: string): Promise<List |null>
 
-    deleteList(list_id: string): boolean;
+    deleteList(list_id: string): Promise<boolean>;
 }

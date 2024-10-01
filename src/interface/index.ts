@@ -1,8 +1,11 @@
+import { Request, Response } from 'express';
+import { connectDB } from "../infraestructure/database/mongo-db/connection";
 import { configureDependencies } from "../infraestructure/utils/config";
 
 const express = require('express');
 
 const app = express()
+connectDB();
 
 const {listController, todoController, userController} = configureDependencies()
 
