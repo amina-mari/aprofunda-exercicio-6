@@ -4,7 +4,7 @@ import { ToDo } from "../../domain/todo";
 export interface ListRepository {
     save(list: List): Promise<void>;
 
-    getTodos(list_id: string): Promise<Array<ToDo>>
+    getTodos(list_id: string): Promise<Array<ToDo>|null>
 
     update(list_id: string): Promise<List |null>
 

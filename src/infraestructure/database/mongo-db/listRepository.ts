@@ -10,8 +10,11 @@ export class ListClassRepository implements ListRepository{
         await newList.save();
     }
 
-    async getTodos(list_id: string): Promise<Array<ToDo>> {
-        throw new Error("Method not implemented.");
+    async getTodos(list_id: string): Promise<Array<ToDo>|null> {
+        const list = await ListModel.findById(list_id);
+        
+        if(list) return list.to_dos;
+        else return null;
     }
     async update(list_id: string): Promise<List |null> {
         throw new Error("Method not implemented.");
